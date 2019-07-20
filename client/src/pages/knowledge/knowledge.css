@@ -1,0 +1,21 @@
+.knowledge-container {
+  height: 100%;
+  padding: 20px;
+}
+.add-box {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.add-box input {
+  width: 300px;
+}
+.add-box button {
+  margin-left: 20px;
+  width: 150px;
+}
+.knowledge-list .time,
+.knowledge-list .name {
+  margin-right: 20px;
+}
