@@ -26,7 +26,7 @@ function* getData(action) {
   }
 }
 
-function* deletData(action) {
+function* deleteData(action) {
   try {
     let type = getReducerType(action.type);
     let { id } = action.param;
@@ -89,7 +89,7 @@ function* updateData(action) {
 
 export default function* knowledge() {
   yield takeEvery(getSagaType(Action.GET_KNOW_LIST), getData);
-  yield takeEvery(getSagaType(Action.DELETE_KNOW), deletData);
+  yield takeEvery(getSagaType(Action.DELETE_KNOW), deleteData);
   yield takeEvery(getSagaType(Action.ADD_KNOW), addData);
   yield takeEvery(getSagaType(Action.UPDATE_KNOW), updateData);
 }
