@@ -1,4 +1,4 @@
-import { call, put, takeEvery, select, take } from "redux-saga/effects";
+import { call, put, takeEvery, select } from "redux-saga/effects";
 import Apis from "../api/knowledge";
 import Action from "../action/knowledge";
 import { getSagaType, getReducerType } from "../utils/sagaType";

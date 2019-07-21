@@ -11,10 +11,7 @@ class Know extends React.Component {
   componentDidMount() {
     let type = getSagaType(Action.GET_KNOW_LIST);
     let action = {
-      type,
-      param: {
-        id: 0
-      }
+      type
     };
     dispatch(action);
   }
