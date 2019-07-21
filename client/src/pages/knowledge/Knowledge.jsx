@@ -98,6 +98,7 @@ class Knowledge extends React.Component {
     let { data, name, editName } = this.state;
     return (
       <div className="knowledge-container">
+        <h1>state 实现</h1>
         <div className="add-box">
           <Input
             value={name}
